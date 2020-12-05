@@ -1,0 +1,66 @@
+/*
+ * bai_3.c
+ *
+ * Created: 11/27/2020 3:21:04 AM
+ * Author: hoangi19
+ */
+
+#include <io.h>
+#include <alcd.h>
+#include <delay.h>
+
+#define BT1 PINB.2
+#define BT2 PINB.3
+#define BT3 PINB.0
+
+char *s = "hello_world";
+int i = 0;
+
+void main(void)
+{
+
+DDRB = 0x00;
+PORTB = 0xFF;
+
+DDRD.7 = 1;
+PORTD.7 = 1;
+
+lcd_init(16);
+lcd_clear();
+
+
+while (1)
+    {
+    // Please write your application code here
+        if (BT1 == 0)
+        {   
+            delay_ms(250);
+            for (i = 0;i <= 5; i++)
+            {
+                lcd_clear();
+                lcd_gotoxy(i, 0);
+                lcd_puts(s);
+                delay_ms(100);
+            }
+        }
+        
+        if(BT2 == 0)
+        {
+            delay_ms(250);
+            for (i = 5;i >= 0; i--)
+            {
+                lcd_clear();
+                lcd_gotoxy(i, 0);
+                lcd_puts(s);
+                delay_ms(100);
+            }
+        }
+        
+        if (BT3 == 0)
+        {
+            delay_ms(250);
+            lcd_clear();
+        }
+        
+    }
+}

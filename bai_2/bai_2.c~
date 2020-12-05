@@ -1,0 +1,90 @@
+/*
+ * bai_2.c
+ *
+ * Created: 11/27/2020 2:38:44 AM
+ * Author: hoangi19
+ */
+
+#include <io.h>
+#include <delay.h>
+
+#define BT1 PINB.2
+#define BT2 PINB.3
+#define BT3 PINB.0
+#define LEDg PORTD.5
+
+#define sang 1
+#define toi 0
+
+char stt = 0;
+char dem = 0;
+
+interrupt [TIM0_OVF] void timer0_ovf_isr(void)
+{
+// Reinitialize Timer 0 value
+TCNT0=0xB2;
+// Place your code here
+
+if (stt == 1)
+{
+    if (dem == 25)
+    {
+        LEDg = ~LEDg;
+    }        
+}
+
+dem = (dem+1)%26
+
+}
+
+void main(void)
+{
+
+// Timer/Counter 0 initialization
+// Clock source: System Clock
+// Clock value: 7.813 kHz
+// Mode: Normal top=0xFF
+// OC0 output: Disconnected
+// Timer Period: 9.984 ms
+ASSR=0<<AS0;
+TCCR0=(0<<WGM00) | (0<<COM01) | (0<<COM00) | (0<<WGM01) | (1<<CS02) | (1<<CS01) | (1<<CS00);
+TCNT0=0xB2;
+OCR0=0x00;
+
+// Timer(s)/Counter(s) Interrupt(s) initialization
+TIMSK=(0<<OCIE2) | (0<<TOIE2) | (0<<TICIE1) | (0<<OCIE1A) | (0<<OCIE1B) | (0<<TOIE1) | (0<<OCIE0) | (1<<TOIE0);
+ETIMSK=(0<<TICIE3) | (0<<OCIE3A) | (0<<OCIE3B) | (0<<TOIE3) | (0<<OCIE3C) | (0<<OCIE1C);
+
+#asm("sei")
+
+DDRD = 0x00;
+PORTD = 0x00;
+
+DDRB = 0x00;
+PORTB = 0xFF;
+
+while (1)
+    {
+    // Please write your application code here
+        if (BT1 == 0)
+        {           
+            delay_ms(250);
+            stt = 0;
+            LEDg = sang;
+        }
+        
+        if (BT2 == 0)
+        {   
+            delay_ms(250);
+            stt = 0;
+            LEDg = toi;
+        }
+        
+        if (BT3 == 0)
+        {           
+            delay_ms(250);
+            stt = 1;
+            //LEDg = toi;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+VERSION:3 SOURCE_TIMESTAMP:517B1C8E
+NODE:I LEVEL:0 LINE:8 "E:\Code\learning\ktmt\cvavr\inc\io.h"
+NODE:I LEVEL:0 LINE:9 "E:\Code\learning\ktmt\cvavr\inc\alcd.h"
+NODE:I LEVEL:0 LINE:10 "E:\Code\learning\ktmt\cvavr\inc\delay.h"
+NODE:M LEVEL:0 LINE:12 "BT1"
+NODE:M LEVEL:0 LINE:13 "BT2"
+NODE:M LEVEL:0 LINE:14 "BT3"
+NODE:V LEVEL:0 LINE:16 "*s -> R4,R5"
+NODE:V LEVEL:0 LINE:17 "i -> R6,R7"
+NODE:F LEVEL:0 LINE:19 "main(void)"

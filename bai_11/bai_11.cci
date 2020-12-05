@@ -1,0 +1,9 @@
+VERSION:3 SOURCE_TIMESTAMP:5184566E
+NODE:I LEVEL:0 LINE:8 "E:\Code\learning\ktmt\cvavr\inc\io.h"
+NODE:I LEVEL:0 LINE:9 "E:\Code\learning\ktmt\cvavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:10 "E:\Code\learning\ktmt\cvavr\inc\stdlib.h"
+NODE:I LEVEL:0 LINE:11 "E:\Code\learning\ktmt\cvavr\inc\alcd.h"
+NODE:M LEVEL:0 LINE:13 "CT1"
+NODE:V LEVEL:0 LINE:15 "dem -> R4,R5"
+NODE:V LEVEL:0 LINE:16 "buf -> RAM:????"
+NODE:F LEVEL:0 LINE:19 "main(void)"

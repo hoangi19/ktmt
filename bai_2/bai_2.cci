@@ -1,0 +1,13 @@
+VERSION:3 SOURCE_TIMESTAMP:517B1A3D
+NODE:I LEVEL:0 LINE:8 "E:\Code\learning\ktmt\cvavr\inc\io.h"
+NODE:I LEVEL:0 LINE:9 "E:\Code\learning\ktmt\cvavr\inc\delay.h"
+NODE:M LEVEL:0 LINE:11 "BT1"
+NODE:M LEVEL:0 LINE:12 "BT2"
+NODE:M LEVEL:0 LINE:13 "BT3"
+NODE:M LEVEL:0 LINE:14 "LEDg"
+NODE:M LEVEL:0 LINE:16 "sang"
+NODE:M LEVEL:0 LINE:17 "toi"
+NODE:V LEVEL:0 LINE:19 "stt -> R5"
+NODE:V LEVEL:0 LINE:20 "dem -> R4"
+NODE:F LEVEL:0 LINE:22 "timer0_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:40 "main(void)"

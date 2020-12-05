@@ -1,0 +1,12 @@
+VERSION:3 SOURCE_TIMESTAMP:5184112B
+NODE:I LEVEL:0 LINE:8 "E:\Code\learning\ktmt\cvavr\inc\io.h"
+NODE:I LEVEL:0 LINE:10 "E:\Code\learning\ktmt\cvavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:11 "E:\Code\learning\ktmt\cvavr\inc\alcd.h"
+NODE:I LEVEL:0 LINE:12 "E:\Code\learning\ktmt\cvavr\inc\stdlib.h"
+NODE:M LEVEL:0 LINE:14 "CT1"
+NODE:V LEVEL:0 LINE:16 "i -> R5"
+NODE:V LEVEL:0 LINE:17 "adc_val -> R6,R7"
+NODE:V LEVEL:0 LINE:18 "*buf -> R8,R9"
+NODE:M LEVEL:0 LINE:23 "ADC_VREF_TYPE"
+NODE:F LEVEL:0 LINE:26 "read_adc(unsigned char adc_input)"
+NODE:F LEVEL:0 LINE:40 "main(void)"
