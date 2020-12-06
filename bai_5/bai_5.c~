@@ -72,7 +72,7 @@ while (1)
             for (i = 0; i <= 3; i++)
             {
                 adc_val = read_adc(i);
-                lcd_gotoxy(5*i%15, 5*i/16);
+                lcd_gotoxy(5*i%15, 5*i/15);
                 itoa(adc_val, buf);
                 lcd_puts(buf);
             }    

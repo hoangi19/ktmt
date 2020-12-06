@@ -67,7 +67,7 @@ lcd_clear();
 while (1)
     {
     // Please write your application code here
-        if (CT1 == 1)
+        if (CT1 == 0)
         {
             for (i = 2; i <= 5; i++)
             {

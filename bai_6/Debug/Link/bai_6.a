@@ -136,7 +136,7 @@
 ;PCODE: $00000036 VOL: 0
 ; 0000 0044     {
 ; 0000 0045     // Please write your application code here
-; 0000 0046         if (CT1 == 1)
+; 0000 0046         if (CT1 == 0)
 ;PCODE: $00000037 VOL: 0
 ;PCODE: $00000038 VOL: 0
 ;PCODE: $00000039 VOL: 0

@@ -1361,8 +1361,8 @@ _main:
 _0xA:
 ; 0000 0044     {
 ; 0000 0045     // Please write your application code here
-; 0000 0046         if (CT1 == 1)
-	SBIS 0x16,2
+; 0000 0046         if (CT1 == 0)
+	SBIC 0x16,2
 	RJMP _0xD
 ; 0000 0047         {
 ; 0000 0048             for (i = 0; i <= 3; i++)
